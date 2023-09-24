@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Homework 2</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="nanotechnologies-homework-ii">Nanotechnologies Homework II</h1>
+<p>João Barreiros C. Rodrigues nº99968, MEEC</p>
+<h2 id="exercise-1---microelectrode-array-for-in-vitro-studies">Exercise
+1 - Microelectrode array for <em>in vitro</em> studies</h2>
+<p>This is a topic of great personal interest, specifically for the
+purpose of bio-FPGAs (programming the neuron array through
+<em>stimuli</em> to develop a certain “bio-computer architecture”).
+Since the specifications do not include the formation of probes this
+exercise will be treated as if it was refering <strong>only</strong> to
+the manufacture of a <em>in vitro</em> MEA.</p>
+<p>Enumerating the manufacture process:</p>
+<ol type="1">
+<li>Substrate Preparation</li>
+<li>Deposition of Aluminium using <strong>Physical Vapour
+Deposition</strong></li>
+<li>Add photoresist coating and bake</li>
+<li>Photolithography (Mask Aligment, <strong>EUV exposure</strong> and
+re-baking)</li>
+<li>Wash exposed photoresist</li>
+<li>Combination of <strong>chemical (wet) and physical (plasma)</strong>
+etching to remove the excess aluminium and wash remaining
+photoresist</li>
+<li>Deposition of Gold using <strong>Physical Vapour
+Deposition</strong></li>
+<li>Add photoresist coating and bake</li>
+<li>Photolithography (Mask Aligment, <strong>EUV exposure</strong> and
+re-baking)</li>
+<li>Wash exposed photoresist</li>
+<li><strong>Chemical</strong> etch of exposed gold using a
+<strong>Potassium Iodine</strong> (KI) etchant, <strong>DO NOT WASH
+REMAINING PHOTORESIST</strong></li>
+<li>Deposition of Silicon Dioxide using <strong>Physical Vapour
+Deposition</strong></li>
+<li>Lift-off of the remaining photoresist to expose Gold pads</li>
+</ol>
+<figure>
+<img src="image_sources/nanotec/process.jpg"
+alt="Schematization of the process described above for the manufacture of a MEA" />
+<figcaption aria-hidden="true">Schematization of the process described
+above for the manufacture of a MEA</figcaption>
+</figure>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Process only uses two masks (cost-effectiveness)</li>
+<li>Uses Chemical etching of gold and lift-off of Silicon Dioxide in
+order to not damage the layers beneath</li>
+</ul>
+<p><strong>Problems:</strong></p>
+<ul>
+<li>Lift-off is traditionally less precise than etching</li>
+<li>Erosion of the gold pads laterals will probably occur during gold
+etching and the chemical etching of gold is mostly relying on gravity to
+etch excess gold under the gold pads</li>
+</ul>
+<p><strong>Possible Solutions:</strong></p>
+<ul>
+<li>Alter gold-pad design (encircle laterals of Aluminium pad) to ease
+the need to etch excess gold under the gold pad , which has the
+trade-off of shortening the distance between vias, with the possibility
+to create parasite capacitances</li>
+<li>Deposite a Silicon Dioxide layer after setting the aluminium and
+instead use the protective photoresist from the SiO<span
+class="math inline">_2</span> lithography process to lift-off gold</li>
+<li>Use a more conventional three mask process</li>
+</ul>
+<h2 id="exercise-2">Exercise 2</h2>
+<h3 id="part-a">Part A</h3>
+<p>Using the formula for the natural frequency of a beam:</p>
+<p><span class="math inline">f_{Si}=\frac{C_2}{2
+\pi}\sqrt{\frac{I}{AL^4}}\sqrt{\frac{E}{\rho}}</span></p>
+<p>With the Inertia momentum formula and Area formula for a a beam of a
+square shaped section:</p>
+<p><span class="math inline">I_{beam}=\frac{bh^3}{12}</span> <span
+class="math inline">A_{beam}=bh</span></p>
+<p>And combining with the material properties of Silicon and geometrical
+dimensions of the beam, and using <span class="math inline">C_2</span>
+for the cantliever beam:</p>
+<p><span class="math inline">E_{Si}= 190 GPa</span></p>
+<p><span class="math inline">\rho _{Si}= 2330 kg/m^3</span></p>
+<p><span class="math inline">L= 1 \mu m</span></p>
+<p><span class="math inline">b= 100 nm</span></p>
+<p><span class="math inline">h= 50 nm</span></p>
+<p><span class="math inline">C_2= 3.52</span></p>
+<p>We can deduce:</p>
+<p><span class="math inline">f_{Si}=\frac{3.52}{2
+\pi}\sqrt{\frac{\frac{100n*(50n)^3}{12}}{100n*50n*(1
+\mu)^4}}\sqrt{\frac{190G}{2330}}=72MHz</span></p>
+<p>And for a diamond beam with the same geometrical dimensions:</p>
+<p><span class="math inline">E_{Diamond}= 1.2 TPa</span></p>
+<p><span class="math inline">\rho _{Diamond}= 3500 kg/m^3</span></p>
+<p><span class="math inline">f_{Diamond}=\frac{3.52}{2
+\pi}\sqrt{\frac{\frac{100n*(50n)^3}{12}}{100n*50n*(1
+\mu)^4}}\sqrt{\frac{1.2T}{3500}}=151MHz</span></p>
+<h3 id="part-b">Part B</h3>
+<p>The formula for the deflection of a cantliever beam due to a
+uniformly distributed load is:</p>
+<p><span class="math inline">\delta= \frac{FL^3}{8EI}</span></p>
+<p>To determine the number of molecules of BSA absorbed and thereafter
+the force they apply on the cantliever beam:</p>
+<p><span class="math inline">N_{BSA}=\frac{A_{Beam Surface}}{A_{BSA
+Molecule}}=\frac{b*h}{A_{BSA Molecule}}=\frac{100n * 1
+\mu}{(4n)^2}=6250</span></p>
+<p><span class="math inline">F= N_{BSA}* g * m_{BSA}=6250 * 9.8 * 66.5k
+* 1.66*10^{-27}=6.76 aPa</span></p>
+<p>Therefore using the previously calculated Inertia momentum and Young
+modulus:</p>
+<p><span class="math inline">\delta=\frac{6.76a*(1
+\mu)^3}{8*190G*0.14q}=4.44 am</span></p>
+<h3 id="part-c">Part C</h3>
+<p>To determine the ressonance frequency shift from the BSA monolayer
+deposition on the cantliever we can use the following formula, and
+substitute with the previous calculations:</p>
+<p><span class="math inline">\frac{f_0 ^2 - f_1 ^2}{f_0 ^2} \approx
+\frac{\delta m}{m} \Leftrightarrow f_1 \approx</span></p>
+<p><span class="math inline">\approx f_0 * \sqrt{1-\frac{m_{BSA
+monolayer}}{m_{beam}}} \Leftrightarrow f_1 \approx f_0 *
+\sqrt{1-\frac{m_{BSA monolayer}}{L* b * h *
+\rho_{Silicon}}}=69.768MHz</span></p>
+<h3 id="part-d">Part D</h3>
+<p>The micro-cantliever beam has geometrical properties:</p>
+<p><span class="math inline">L= 100 \mu m</span></p>
+<p><span class="math inline">b=10 \mu m</span></p>
+<p><span class="math inline">h= 5 \mu m</span></p>
+<p>First to determine the natural frequency of the new beam we re-use
+the formula in A, adapted:</p>
+<p><span class="math inline">f_{microSi}=\frac{3.52}{2
+\pi}\sqrt{\frac{\frac{10 \mu *(50 \mu)^3}{12}}{10 \mu * 50 \mu *(100
+\mu)^4}}\sqrt{\frac{190G}{2330}}=593.5MHz</span></p>
+<p>To determine the ressonance frequency shift from the BSA monolayer
+deposition on the new cantliever we can use the following formula, and
+substitute with the previous calculations:</p>
+<p><span class="math inline">\frac{f_0 ^2 - f_1 ^2}{f_0 ^2} \approx
+\frac{\delta m}{m} \Leftrightarrow f_1 \approx</span></p>
+<p><span class="math inline">\approx f_0 * \sqrt{1-\frac{m_{BSA
+monolayer}}{m_{beam}}} \Leftrightarrow f_1 \approx f_0 *
+\sqrt{1-\frac{m_{BSA monolayer}}{L* b * h *
+\rho_{Silicon}}}=593.49MHz</span></p>
+<p>To determine the ressonance frequency shift from a single BSA
+molecule deposition on the new cantliever we can use the formula, and
+substitute with the previous calculations:</p>
+<p><span class="math inline">\frac{f_0 ^2 - f_1 ^2}{f_0 ^2} \approx
+\frac{\delta m}{m} \Leftrightarrow f_1 \approx</span></p>
+<p><span class="math inline">\approx f_0 * \sqrt{1-\frac{m_{BSA
+molecule}}{m_{beam}}} \Leftrightarrow f_1 \approx f_0 *
+\sqrt{1-\frac{m_{BSA molecule}}{L * b * h *
+\rho_{Silicon}}}=593.5MHz</span></p>
+<p>As predicted at the micro-scale a solid state sensor based on the
+physical deformation of a beam is obsolete to detected the depostion of
+BSA proteins.</p>
+</body>
+</html>
