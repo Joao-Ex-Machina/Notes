@@ -24,7 +24,7 @@ Enumerating the manufacture process:
 12. Deposition of Silicon Dioxide using **Physical Vapour Deposition**
 13. Lift-off of the remaining photoresist to expose Gold pads
 
-![Schematization of the process described above for the manufacture of a MEA](image_sources/nanotec/process.jpg)
+![Schematization of the process described above for the manufacture of a MEA](image_sources/process.jpg)
 
 **Advantages:**
 
