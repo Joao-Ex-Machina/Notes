@@ -2,6 +2,7 @@
 
 #TODO:
 
+- [ ] Prepare simple HackerSchool theme for beamer
 - [ ] Prepare presentation for 1st Meeting
 - [ ] Finish and submit CA^2 Técnico projects
  
